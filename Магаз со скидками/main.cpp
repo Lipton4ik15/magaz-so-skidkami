@@ -1,12 +1,4 @@
-#include <iostream>
-#include <windows.h>
-#include <ctime>
-#include <iomanip>
-#include <string>
-#include <unordered_set>
-#include <vector>
-#include <algorithm>
-
+#include "Functions.hpp"
 size_t userSize = 3;
 size_t staffCount = 1;
 std::string userStatus[3]{ "Супер администратор","Администратор","Сотрудник" };
@@ -18,9 +10,6 @@ double* salesArr = new double[userSize] {0.0, 0.0, 0.0};
 unsigned int* userIdArr = new unsigned int[userSize] {1, 2, 3};
 unsigned int currentId = 0;
 std::string currentStatus;
-void CheckArrPushback();
-void ChangeAccount();
-void PrintCheck(double& totalSum);
 
 size_t storageSize = 10;
 size_t maxItemSize = 299;
